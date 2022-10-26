@@ -1,0 +1,111 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;300;400;500;600&display=swap');
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Pattaya', sans-serif;
+}
+
+body {
+    display: flex;
+    background-color: #23242a;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+
+.box{
+    position: relative;
+    width: 500px;
+    height: 460px;
+    background: #1c1c1c;
+    border-radius: 8px;
+    overflow: hidden;
+}
+
+.box:before{
+    content: '';
+    position: absolute;
+    top: -50%;
+    left: -50%;
+    width: 500px;
+    height: 460px;
+    background: linear-gradient(0deg , transparent, #00ffc3, #ccff00);
+    animation:animate 3s linear infinite;
+    transform-origin: bottom right;
+}
+
+.box:after{
+    content: '';
+    position: absolute;
+    top: -50%;
+    left: -50%;
+    width: 500px;
+    height: 460px;
+    background: linear-gradient(0deg , transparent, #ccff00, #00ffc3);
+    animation:animate 3s linear infinite;
+    transform-origin: bottom right;
+    animation-delay: -1.5s;
+   
+}
+
+.form{
+    z-index: 10;
+    position: absolute;
+    inset: 2px;
+    background: #28292d;
+    border-radius: 8px;
+
+}
+
+@keyframes animate{
+    0%{
+        transform: rotate(0deg);
+    }
+    100%{
+        transform: rotate(360deg);
+    }
+}
+
+.container {
+    width: 370px;
+    height: 410px;
+    background-color: #28292d;
+    padding: 1px 50px;
+    position: absolute;
+    transform: translate(-50%, -50%);
+    left: 50%;
+    top: 50%;
+    border-radius: 5px;
+    
+}
+
+.container h2{
+    color: #45f3ff;
+}
+
+
+.input_box {
+    position: relative;
+    margin-top: 35px;
+    
+}
+.input_box input {
+    position: relative;
+    height: 50px;
+    width: 100%;
+    padding: 20px 10px 10px;
+    background: transparent;
+    border-radius: 20px;
+    border: 1px solid #00ffc3;
+    outline: none;
+    color: #fff;
+    font-size: 1em;
+    letter-spacing: 0.05em;
+
+}
+
+
+/*Ritesh Mishra-->
+Css Code for tempreture converter*/

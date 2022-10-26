@@ -1,0 +1,43 @@
+<!--Ritesh Mishra-->
+<!--Html Code for tempreture converter-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+     <!-- font awesome cdn link  -->
+     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+
+     <!-- custom css file link  -->
+     <link rel="stylesheet" href="style.css">
+
+
+    <title>Tempreture_converter</title>
+</head>
+<body>
+    <div class="box">
+        <div class="form">
+            <div class="container">
+                
+                <div class="input_box">
+                    <h2>Tempreture  Converter</h2>
+                <br>
+                <br>
+                <br>
+                <br>
+                <label for="celsius"></label>
+                <input type="number" id="celsius" oninput="celToFar()" placeholder="Celsius">
+            </div>
+            <br>
+            <label for="fahrenheit"></label>
+            <div class="input_box">
+                <input type="number" id="fahrenheit" oninput="farToCel()" placeholder="Fahrenheit">
+            </div>
+        </div>
+    </div>
+    </div>
+   <script src="main.js"></script>
+</body>
+</html>
